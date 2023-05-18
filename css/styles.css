@@ -13,6 +13,9 @@
   --clr-light-green: #def8af;
   --clr-medium-green: #88cc11;
   --clr-dark-green: #456809;
+  --clr-orange: #ed7d00;
+  --clr-grey: #666666;
+  --clr-grey-light: #d9d9d9
 
   --spacing: 0.25rem;
   --transition: all 0.2s linear;
@@ -76,7 +79,7 @@ body {
 .navbar-header__theme {
   font-size: 26px;
   font-weight: 400;
-  color: #666666;
+  color: var(--clr-grey);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -115,4 +118,43 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+}
+
+.navbar-header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 195px;
+}
+
+.navbar-header__right_whatsapp {
+  border: 1px solid #d9d9d9;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-header__right_whatsapp_img {
+  padding-top: 2.9px;
+}
+
+.navbar-header__right_sign {
+  height: 38px;
+  width: 69px;
+  background: var(--clr-orange);
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.navbar-header__right_divisor{
+  height: 38px;
+  border: 1px solid #d9d9d9;
+}
+
+.navbar-header__right_profile {
+  border: 1px solid #d9d9d9;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
 }
