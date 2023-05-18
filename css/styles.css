@@ -52,7 +52,6 @@ body {
 .navbar-header__left {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 500px;
 }
 
@@ -67,16 +66,35 @@ body {
   transition: var(--transition);
   padding: 0.5rem;
   height: 40px;
+  margin-right: 0.8rem;
+}
+.navbar-header__toggle:hover {
+  transform: scale(1.2);
+}
+
+.navbar-header__search {
+  display: none;
+  background: transparent;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 2rem;
+  cursor: pointer;
+  align-items: center;
+  transition: var(--transition);
+  padding: 0.5rem;
+  height: 40px;
+  margin-right: 0.8rem;
+}
+
+.navbar-header__search:hover {
+  transform: scale(1.2);
 }
 
 .navbar-header__toggle-text {
   padding: 0.3rem;
   font-weight: 700;
   font-size: 1rem;
-}
-
-.navbar-header__toggle:hover {
-  transform: scale(1.2);
+  display: none;
 }
 
 .navbar-header__title {
