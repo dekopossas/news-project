@@ -40,3 +40,20 @@ body {
   box-shadow: var(--dark-shadow);
 }
 
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-header__toggle {
+  background: transparent;
+  border: transparent;
+  font-size: 3.2rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.navbar-header__toggle:hover {
+  transform: scale(1.2);
+}
