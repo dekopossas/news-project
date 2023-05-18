@@ -33,6 +33,10 @@ body {
   background: var(--clr-background);
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Navbar */
 
 .navbar {
@@ -102,6 +106,7 @@ body {
 }
 
 .navbar-header__theme {
+  display: none;
   font-size: 26px;
   font-weight: 400;
   color: var(--clr-grey);
@@ -148,16 +153,18 @@ body {
 .navbar-header__right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 195px;
 }
 
 .navbar-header__right_whatsapp {
+  display: none;
   border: 1px solid #d9d9d9;
   border-radius: 100%;
   width: 40px;
   transition: var(--transition);
   height: 40px;
+  margin-right: 0.8rem;
 }
 
 .navbar-header__right_whatsapp:hover {
@@ -169,6 +176,7 @@ body {
 }
 
 .navbar-header__right_sign {
+  display: none;
   height: 38px;
   width: 69px;
   background: var(--clr-orange);
@@ -176,6 +184,7 @@ body {
   transition: var(--transition);
   border: transparent;
   cursor: pointer;
+  margin-right: 0.8rem;
 }
 
 .navbar-header__right_sign:hover {
@@ -183,16 +192,18 @@ body {
 }
 
 .navbar-header__right_divisor {
+  display: none;
   height: 38px;
   border: 1px solid #d9d9d9;
+  margin-right: 0.8rem;
 }
 
 .navbar-header__right_profile {
+  display: none;
   border: 1px solid #d9d9d9;
   border-radius: 100%;
   width: 40px;
   height: 40px;
-  display: flex;
   transition: var(--transition);
   justify-content: center;
   align-items: center;
@@ -200,4 +211,6 @@ body {
 
 .navbar-header__right_profile:hover {
   transform: scale(1.2);
+}
+.navbar-header__right_whatsapp_img {
 }
