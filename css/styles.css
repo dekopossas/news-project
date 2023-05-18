@@ -30,10 +30,13 @@ body {
   background: var(--clr-background);
 }
 
+/* Navbar */
+
 .navbar {
   position: fixed;
   background: var(--clr-background);
   width: 100%;
   padding: 1.6rem;
-  box-shadow: var(dark-shadow);
+  box-shadow: var(--dark-shadow);
 }
+
