@@ -147,9 +147,6 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 920px) {
-}
-
 .navbar-header__right {
   display: flex;
   align-items: center;
@@ -185,6 +182,9 @@ a {
   border: transparent;
   cursor: pointer;
   margin-right: 0.8rem;
+  color: var(--clr-white);
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .navbar-header__right_sign:hover {
@@ -213,4 +213,14 @@ a {
   transform: scale(1.2);
 }
 .navbar-header__right_whatsapp_img {
+}
+
+@media screen and (min-width: 700px) {
+  .navbar-header__toggle-text {
+    display: flex;
+  }
+
+  .navbar-header__right_sign {
+    display: block;
+  }
 }
