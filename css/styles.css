@@ -125,11 +125,6 @@ body {
 }
 
 @media screen and (min-width: 920px) {
-  .navbar-list {
-    height: auto;
-  }
-
-
 }
 
 .navbar-header__right {
@@ -143,7 +138,12 @@ body {
   border: 1px solid #d9d9d9;
   border-radius: 100%;
   width: 40px;
+  transition: var(--transition);
   height: 40px;
+}
+
+.navbar-header__right_whatsapp:hover {
+  transform: scale(1.2);
 }
 
 .navbar-header__right_whatsapp_img {
@@ -155,8 +155,13 @@ body {
   width: 69px;
   background: var(--clr-orange);
   border-radius: 4px;
+  transition: var(--transition);
   border: transparent;
   cursor: pointer;
+}
+
+.navbar-header__right_sign:hover {
+  transform: scale(1.2);
 }
 
 .navbar-header__right_divisor {
@@ -170,6 +175,11 @@ body {
   width: 40px;
   height: 40px;
   display: flex;
+  transition: var(--transition);
   justify-content: center;
   align-items: center;
+}
+
+.navbar-header__right_profile:hover {
+  transform: scale(1.2);
 }
