@@ -38,6 +38,10 @@ a {
 }
 
 /* Navbar */
+.header {
+  display: flex;
+  justify-content: center;
+}
 
 .navbar {
   position: fixed;
@@ -45,6 +49,8 @@ a {
   width: 100%;
   padding: 1.6rem;
   box-shadow: var(--dark-shadow);
+  margin: auto;
+  max-width: 1366px;
 }
 
 .navbar-header {
@@ -143,10 +149,6 @@ a {
   padding-left: 3.6rem;
 }
 
-.navbar-icons {
-  display: none;
-}
-
 .navbar-header__right {
   display: flex;
   align-items: center;
@@ -173,7 +175,6 @@ a {
 }
 
 .navbar-header__right_sign {
-  display: none;
   height: 38px;
   width: 69px;
   background: var(--clr-orange);
@@ -217,10 +218,22 @@ a {
 
 @media screen and (min-width: 700px) {
   .navbar-header__toggle-text {
+    display: block;
+  }
+
+  .navbar-header__search {
     display: flex;
   }
 
-  .navbar-header__right_sign {
+  .navbar-header__right_whatsapp {
+    display: block;
+  }
+
+  .navbar-header__right_profile {
+    display: flex;
+  }
+
+  .navbar-header__right_divisor {
     display: block;
   }
 }
