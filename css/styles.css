@@ -5,7 +5,7 @@
 }
 
 :root {
-  --ff-primary: "Roboto", sans-serif;
+  --ff-primary: 'Roboto', sans-serif;
 
   --clr-background: #f5f5f5;
   --clr-white: #f1fcde;
@@ -17,6 +17,7 @@
   --clr-grey: #666666;
   --clr-grey-light: #d9d9d9;
   --clr-link: #004071;
+  --clr-title-news: #333333;
 
   --spacing: 0.25rem;
   --transition: all 0.2s linear;
@@ -118,7 +119,6 @@ a {
   font-size: 26px;
   font-weight: 400;
   color: var(--clr-grey);
-  font-family: 'Roboto', sans-serif;
 }
 
 .navbar-header__logo {
@@ -253,6 +253,8 @@ a {
 .main-content {
   width: 1366px;
   height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .bread-crumb {
@@ -262,7 +264,6 @@ a {
 }
 
 .bread-crumb__link {
-  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 500px;
   transition: var(--transition);
@@ -283,10 +284,26 @@ a {
 
 .content {
   max-width: 1107px;
+  margin-top: 40px;
 }
 
 .hero-texto-5 {
-  font-size:12px;
-  font-width: 700px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--clr-link);
+  margin-bottom: 10px;
+}
 
+.hero-texto-2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--clr-title-news);
+  font-family: 'Merriweather', serif;
+  margin-bottom: 10px;
+}
+
+.hero-texto-7 {
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--clr-title-news);
 }
