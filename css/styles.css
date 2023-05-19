@@ -366,12 +366,24 @@ a {
   radius: 5px;
 }
 
+.news-content {
+  margin-top: 20px;
+}
+
+.news-content__header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 765px;
+}
+
 .colunist {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .colunist-img {
+  margin-right: 10px;
   width: 80px;
 }
 
@@ -386,6 +398,7 @@ a {
   font-size: 12px;
   font-weight: 700;
   border-radius: 3px;
+  margin-bottom: 9px;
 }
 
 .clock {
@@ -393,7 +406,33 @@ a {
   align-items: center;
 }
 
-.clock p {
+.clock span {
+  margin-top: 5px;
   color: var(--clr-ad-text);
   font-size: 12px;
+}
+
+.share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share img {
+  margin-left: 10px;
+}
+
+.google-btn {
+  width: 155px;
+  height: 30px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  border: transparent;
+}
+
+.google-btn img {
+  margin-left: 5px;
 }
