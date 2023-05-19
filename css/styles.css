@@ -50,7 +50,7 @@ a {
   position: fixed;
   background: var(--clr-background);
   width: 100%;
-  padding: 0.8rem;
+  padding: 1.6rem;
   box-shadow: var(--dark-shadow);
   margin: auto;
   max-width: 1366px;
@@ -242,10 +242,8 @@ a {
   }
 }
 
-@media screen and (min-width: 1366px) {
-  .navbar {
-    padding: 1.8rem;
-  }
+@media screen and (max-width: 1366px) {
+
 }
 
 /* Hero */
