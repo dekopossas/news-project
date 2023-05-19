@@ -18,6 +18,7 @@
   --clr-grey-light: #d9d9d9;
   --clr-link: #004071;
   --clr-title-news: #333333;
+  --clr-ad-text: #363636;
 
   --spacing: 0.25rem;
   --transition: all 0.2s linear;
@@ -303,7 +304,13 @@ a {
 }
 
 .hero-texto-7 {
-  font-weight: 300;
+  font-weight: 200;
   font-size: 16px;
   color: var(--clr-title-news);
+}
+
+.hero-texto-ad {
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--clr-ad-text);
 }
