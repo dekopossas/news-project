@@ -5,7 +5,7 @@
 }
 
 :root {
-  --ff-primary: 'Cairo', sans-serif;
+  --ff-primary: 'Roboto', sans-serif;
 
   --clr-background: #f5f5f5;
   --clr-white: #f1fcde;
@@ -16,6 +16,9 @@
   --clr-orange: #ed7d00;
   --clr-grey: #666666;
   --clr-grey-light: #d9d9d9;
+  --clr-link: #004071;
+  --clr-title-news: #333333;
+  --clr-ad-text: #363636;
 
   --spacing: 0.25rem;
   --transition: all 0.2s linear;
@@ -51,6 +54,7 @@ a {
   box-shadow: var(--dark-shadow);
   margin: auto;
   max-width: 1366px;
+  z-index: 3;
 }
 
 .navbar-header {
@@ -116,7 +120,6 @@ a {
   font-size: 26px;
   font-weight: 400;
   color: var(--clr-grey);
-  font-family: 'Roboto', sans-serif;
 }
 
 .navbar-header__logo {
@@ -213,6 +216,7 @@ a {
 .navbar-header__right_profile:hover {
   transform: scale(1.2);
 }
+
 .navbar-header__right_whatsapp_img {
 }
 
@@ -236,4 +240,94 @@ a {
   .navbar-header__right_divisor {
     display: block;
   }
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  width: 1366px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.bread-crumb {
+  margin-top: 100px;
+  margin-left: 10px;
+  /* display: none; */
+}
+
+.bread-crumb__link {
+  font-size: 12px;
+  font-weight: 500px;
+  transition: var(--transition);
+  color: var(--clr-link);
+}
+
+.sinal-maior::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(45deg);
+  margin-right: 3.5px;
+  border-color: #c2d1d9;
+}
+
+.content {
+  max-width: 1107px;
+  margin-top: 40px;
+}
+
+.hero-texto-5 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--clr-link);
+  margin-bottom: 10px;
+}
+
+.hero-texto-2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--clr-title-news);
+  font-family: 'Merriweather', serif;
+  margin-bottom: 10px;
+}
+
+.hero-texto-7 {
+  font-weight: 200;
+  font-size: 16px;
+  color: var(--clr-title-news);
+  margin-bottom: 30px;
+}
+
+.hero-texto-ad {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--clr-ad-text);
+}
+
+.hero-texto-ad-content {
+  width: 970px;
+}
+
+.ad-content-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.ad-img-1 {
+  width: 970px;
 }
