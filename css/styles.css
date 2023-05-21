@@ -581,3 +581,40 @@ a {
     max-width: 450px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .hero-text-5 {
+  }
+  .ad-content-1 {
+  }
+  .hero-title {
+  }
+  .ad-img-1 {
+    max-width: 300px;
+  }
+  .content {
+    max-width: 300px;
+  }
+  .hero-text-ad-content {
+    max-width: 300px;
+  }
+  .news-main-content {
+    max-width: 300px;
+  }
+  .news-content__header {
+    max-width: 300px;
+  }
+  .first-news-img {
+  }
+  .share-text {
+  }
+  .colunist {
+    max-width: 300px;
+  }
+  .first-news-img {
+    max-width: 300px;
+  }
+  .news-content__player {
+    max-width: 300px;
+  }
+}
